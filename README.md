@@ -34,7 +34,7 @@ A modern, responsive e-commerce application built with React, Redux Toolkit, and
    git clone https://github.com/Abhiwarkar/shoppyglobe.git
    cd shoppyglobe
    ```
-Deployed Link ---
+Deployed Link ---  https://shoppyglobe-eta.vercel.app/
 
 2. **Install dependencies**
    ```bash
