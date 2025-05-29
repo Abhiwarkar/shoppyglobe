@@ -1,0 +1,161 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* Product card hover effects */
+.product-card {
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+              0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Responsive layout for product cards */
+.product-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 640px) { /* sm: mobile */
+  .product-card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) { /* md: tablet */
+  .product-card {
+    max-width: 48%;
+  }
+}
+
+@media (min-width: 1024px) { /* lg: laptop */
+  .product-card {
+    max-width: 32%;
+  }
+}
+
+@media (min-width: 1280px) { /* xl: desktop */
+  .product-card {
+    max-width: 25%;
+  }
+}
+
+/* Cart badge animation */
+.cart-badge {
+  animation: pulse 2s infinite;
+}
+
+/* Loading skeleton animation */
+.skeleton {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+/* Smooth transitions for interactive elements */
+button, a, input, select, textarea {
+  transition: all 0.2s ease-in-out;
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #3B82F6;
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar for webkit browsers */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Responsive padding and margin helpers */
+.responsive-section {
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+  .responsive-section {
+    padding: 1.5rem;
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-section {
+    padding: 2rem;
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-section {
+    padding: 2.5rem;
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+  .responsive-section {
+    padding: 3rem;
+    max-width: 1280px;
+  }
+}
